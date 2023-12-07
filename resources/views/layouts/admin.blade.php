@@ -102,7 +102,7 @@
 
 
 										<div class="menu-item px-5">
-											<a href="" class="menu-link px-5">Sign Out</a>
+											<a href="{{url('/logout')}}" class="menu-link px-5">Sign Out</a>
 										</div>
 
 									</div>
@@ -366,8 +366,8 @@
 				<div class="footer py-4 d-flex flex-lg-column" id="kt_footer">
 					<div class="container-fluid d-flex flex-column flex-md-row align-items-center justify-content-between">
 						<div class="text-dark order-2 order-md-1">
-							<span class="text-muted fw-semibold me-1">2022&copy;</span>
-							<a href="https://keenthemes.com" target="_blank" class="text-gray-800 text-hover-primary">Company Name</a>
+							<span class="text-muted fw-semibold me-1">{{date('Y')}}&copy;</span>
+							<a href="" target="_blank" class="text-gray-800 text-hover-primary">Company Name</a>
 						</div>
 
 					</div>

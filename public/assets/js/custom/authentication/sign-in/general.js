@@ -50,7 +50,7 @@ var KTSigninGeneral = function () {
                     },
                     dataType: "json",
                     success: function (response) {
-                        // console.log(response);
+                        console.log(response);
                         if (response.status == 200) {
                             swal.fire({
                                 text: "Your credentials matches our record",
@@ -60,7 +60,7 @@ var KTSigninGeneral = function () {
                             });
                             const work = async () => {
                                 await sleep(1000);
-                                window.location = "/dashboard";
+                                window.location = "/admin/dashboard";
                             };
                             work();
                         } else if (response.status == 201) {

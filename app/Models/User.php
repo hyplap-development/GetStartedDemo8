@@ -47,11 +47,6 @@ class User extends Authenticatable
     ];
 
     public function rolee(){
-        return $this->hasOne(Role::class,'id','role');
-    }
-
-    public function getIsAdminAttribute()
-    {
-        return $this->rolee()->where('id', 1)->exists();
+        return $this->hasOne(Role::class,'slug','role');
     }
 }

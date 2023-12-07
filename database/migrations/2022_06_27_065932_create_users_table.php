@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('phone')->nullable();
             $table->string('email')->nullable();
             $table->string('password')->nullable();
-            $table->integer('role')->nullable();
+            $table->string('role')->nullable();
             $table->boolean('status')->default(1);
             $table->boolean('deleteId')->default(0);
             $table->timestamps();

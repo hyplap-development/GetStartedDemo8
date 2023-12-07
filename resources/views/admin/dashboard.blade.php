@@ -13,6 +13,11 @@
 
 @section('content')
 
+<div class="alert alert-primary text-center">
+    <h1> Welcome to  <strong>Admin Panel</strong></h1>
+</div>
+
+
 @endsection
 
 @section('scripts')

@@ -22,11 +22,11 @@ class CheckUser
             } else {
                 Auth::logout();
                 Session()->flash('alert-danger', "You have been deactivated from the ADMIN PANEL\nPlease contact the Admin to reinstate your privilages");
-                return redirect('login');
+                return redirect('admin/login');
             }
         } else {
             // Session()->flash('alert-danger', "Please Login in First");
-            return redirect('login');
+            return redirect('admin/login');
         }
 
         return $next($request);
